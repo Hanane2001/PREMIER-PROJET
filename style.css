@@ -1,0 +1,443 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppin','Merriweather','Poly','Poller one', sans-serif;
+ }
+ 
+ header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    color: #000;
+ }
+ 
+ .logo {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+ }
+
+ .logo img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+  }
+  
+  .logo p {
+    position: relative;
+    font-family: 'Poppin';
+    font-weight: 200;
+  }
+
+  .content{
+    
+    display: flex;
+    align-items: center;
+  }
+  .content img{
+    width: 40px;
+    height: 40px;
+  }
+
+ .call-button {
+    background-color: #f2c14e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: #f2c14e;
+    cursor: pointer;
+    margin-left: 60%;
+ }
+
+ .call-button img{
+    width: 20px;
+    height: 20px;
+ }
+
+ .call-button pre{
+    font-weight: 500;
+    font-family: 'Poppin';
+    text-align: center;
+ }
+ 
+ .slider {
+    background-image: url("homeh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+ }
+ 
+ .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 1s;
+ }
+ 
+ .slide.current {
+    opacity: 1;
+ }
+
+ .slide img{
+   bottom: 51%;
+   position: absolute;
+   right: 50%;
+   width: 120px;
+ }
+
+ .slide pre{
+   position: absolute;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    color: #fff;
+    font-size: 60px;
+    right: 40%;
+
+ }
+
+ .slide .content {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ 
+ .slide .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #fff;
+    background-color: #00b3b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ .slide .arrow.left {
+    left: 0;
+ }
+ 
+ .slide .arrow.right {
+    right: 0;
+ }  
+
+ .btn{
+    height: 800px;
+    position: relative;
+    background-color: #334b35;
+    z-index: 14;
+    display: flex;
+    /*flex-wrap: wrap;*/
+ }
+
+ .carre{
+    z-index: -1;
+    width: 20%;
+    height: 240px;
+    position: absolute;
+    background-color: #263C28;
+ }
+
+ .carre-or{
+   z-index: 1;
+    width: 20px;
+    height: 246px;
+    position: absolute;
+    background-color: #F7C35F;
+    margin-left: 170px;
+    margin-top: 29%;
+ }
+
+ .fern{
+    width: 20%;
+    height: 600px;
+    margin-left: 13%;
+    margin-top: 5%;
+ }
+
+ .btn h1{
+    margin-left: 5%;
+    font-family: 'Poly';
+    font-weight: 200;
+    color: #fff; 
+ }
+
+ .btn pre{
+    margin-top: 8%;
+    color: #fff;
+    font-family: 'Poly';
+    font-weight: 200;
+    font-size: 23px;
+    text-align: left;
+ }
+
+ .nature-img{
+    position: absolute;
+    height: 290px;
+    bottom: 10%;
+    right: 10%;
+ }
+
+.cont{
+   height: 610px;
+   position: relative;
+   background-color: #6D8C54;
+   z-index: 14;
+   display: flex;
+}
+
+.p1 p{
+   position: absolute;
+   color: #fff;
+   font-family: 'Poller one';
+   font-weight: 900;
+   margin-left: 590px;
+}
+
+.line{
+   position: absolute;
+   top: 6%;
+   left: 40%;
+   height: 1px;
+   width: 297px;
+   background-color: #fff;
+}
+
+.p2 p{
+   position: absolute;
+   color: #fff;
+   font-family: 'Merriweather';
+   left: 171px;
+   top: 69%;
+   font-size: 25px;
+}
+
+.img2{
+   position: absolute;
+   width: 270px;
+   height: 55%;
+   margin-top: 100px;
+   right: 70%;
+}
+
+.p3 p{
+   position: absolute;
+   color: #fff;
+   font-family: 'Merriweather';
+   left: 1032px;
+   top: 69%;
+   font-size: 26px;
+}
+
+.img3{
+   position: absolute;
+   width: 270px;
+   height: 55%;
+   margin-top: 100px;
+   left: 70%;
+}
+/**/
+.btn-group .button1 {
+   position: absolute;
+   top: 387px;
+   left: 21%;
+   background-color: #F7C35F; 
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   cursor: pointer;
+   float: left;
+ }
+ 
+ .btn-group .button1:hover {
+   background-color: #fda504;
+ }
+
+ .btn-group .button2 {
+   background-color: #F7C35F; 
+   position: absolute;
+   top: 387px;
+   left: 79.2%;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   cursor: pointer;
+   float: left;
+ }
+ 
+ .btn-group .button2:hover {
+   background-color: #fda504;
+ }
+
+ /* monocotolydone*/
+.mono{
+   z-index: 5;
+   position: relative;
+   display: flex;
+   background: linear-gradient(to bottom, #577B5A 50%, #6D8C54 50%);
+   height: 680px;
+}
+
+.mo p{
+   position: absolute;
+   color: #fff;
+   font-family: 'Poller one';
+   font-weight: 900;
+   margin-left: 590px;
+}
+
+.line1{
+   position: absolute;
+   top: 6%;
+   left: 40%;
+   height: 1px;
+   width: 222px;
+   background-color: #fff;
+}
+
+.im{
+   z-index: 13;
+   position: absolute;
+   top: 50px;
+   left: 8%;
+   width: 265px;
+   height: 59.9%;
+
+}
+
+.carre-or1{
+   z-index: 6;
+   width: 20px;
+   height: 160px;
+   position: absolute;
+   background-color: #F7C35F;
+   margin-left: 102px;
+   top: 43.7%;
+}
+
+#cercle1{
+   top: 18%;
+   left: 40%;
+   position: absolute;
+   height: 55px;
+   width: 55px;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.p4{
+   position: absolute;
+   top: 18%;
+   left: 4%;
+   font-family: 'Poller one';
+   font-size: 20px;
+}
+
+.p4 span{
+   font-weight: 900;
+   color: #F7C35F;
+}
+
+#cercle2{
+   top: 34%;
+   left: 40%;
+   position: absolute;
+   height: 55px;
+   width: 55px;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.p5{
+   position: absolute;
+   top: 32%;
+   left: 4%;
+   font-family: 'Poller one';
+   font-size: 20px;
+}
+
+.p5 span{
+   font-weight: 900;
+   color: #F7C35F;
+}
+
+.im1{
+   z-index: 15;
+   position: absolute;
+   top: 250px;
+   left: 21%;
+   width: 265px;
+   height: 59.9%;
+
+}
+
+.carre-or2{
+   z-index: 14;
+   width: 20px;
+   height: 160px;
+   position: absolute;
+   background-color: #F7C35F;
+   left: 20%;
+   top: 73.1%;
+}
+
+#cercle3{
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+#cercle4{
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.deco{
+   position: relative;
+   display: flex;
+   background: linear-gradient(to bottom, #577B5A 50%, #6D8C54 50%);
+   height: 610px;
+}
+
+.de p{
+   position: absolute;
+   color: #fff;
+   font-family: 'Poller one';
+   font-weight: 900;
+   margin-left: 590px;
+}
+
+.line2{
+   position: absolute;
+   top: 6%;
+   left: 40%;
+   height: 1px;
+   width: 207px;
+   background-color: #fff;
+}
