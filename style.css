@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppin','Merriweather','Poly','Poller one', sans-serif;
+    font-family: 'Poppin','Merriweather','Poly','Poller one', 'Rancho', sans-serif;
  }
  
  header {
@@ -66,7 +66,7 @@ body {
  }
  
  .slider {
-    background-image: url("homeh.png");
+    background-image: url("img/homeh.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -136,7 +136,7 @@ body {
     right: 0;
  }  
 
- .btn{
+ #btn{
     height: 800px;
     position: relative;
     background-color: #334b35;
@@ -170,14 +170,14 @@ body {
     margin-top: 5%;
  }
 
- .btn h1{
+ #btn h1{
     margin-left: 5%;
     font-family: 'Poly';
     font-weight: 200;
     color: #fff; 
  }
 
- .btn pre{
+ #btn pre{
     margin-top: 8%;
     color: #fff;
     font-family: 'Poly';
@@ -193,7 +193,7 @@ body {
     right: 10%;
  }
 
-.cont{
+#diff{
    height: 610px;
    position: relative;
    background-color: #6D8C54;
@@ -293,7 +293,7 @@ body {
  }
 
  /* monocotolydone*/
-.mono{
+#mono{
    z-index: 5;
    position: relative;
    display: flex;
@@ -345,7 +345,13 @@ body {
    height: 55px;
    width: 55px;
    border-radius: 50%;
-   display: inline-block;
+   display: block;
+}
+
+#cercle1:hover{
+   transform: scale(4.9);
+   z-index: 20;
+  border-radius: 0;
 }
 
 .p4{
@@ -370,6 +376,13 @@ body {
    border-radius: 50%;
    display: inline-block;
 }
+
+#cercle2:hover{
+   transform: scale(4.9);
+   z-index: 20;
+   border-radius: 0;
+}
+
 
 .p5{
    position: absolute;
@@ -405,27 +418,73 @@ body {
 }
 
 #cercle3{
-   height: 25px;
-   width: 25px;
+   top: 51%;
+   left: 40%;
+   position: absolute;
+   height: 55px;
+   width: 55px;
    border-radius: 50%;
    display: inline-block;
+}
+
+#cercle3:hover{
+   transform: scale(4.9);
+   z-index: 20;
+   border-radius: 0;
+}
+
+.p6{
+   position: absolute;
+   top: 49%;
+   left: 4%;
+   font-family: 'Poller one';
+   font-size: 20px;
+}
+
+.p6 span{
+   font-weight: 900;
+   color: #F7C35F;
 }
 
 #cercle4{
-   height: 25px;
-   width: 25px;
+   top: 68%;
+   left: 40%;
+   position: absolute;
+   height: 55px;
+   width: 55px;
    border-radius: 50%;
    display: inline-block;
 }
 
-.deco{
+#cercle4:hover{
+   border-radius: 0;
+   transform: scale(4.9);
+   z-index: 20;
+}
+
+.p7{
+   position: absolute;
+   top: 67.5%;
+   left: 4%;
+   font-family: 'Poller one';
+   font-size: 20px;
+}
+
+.p7 span{
+   font-weight: 900;
+   color: #F7C35F;
+}
+
+/*deco*/
+#dico{
+   z-index: 5;
    position: relative;
    display: flex;
    background: linear-gradient(to bottom, #577B5A 50%, #6D8C54 50%);
-   height: 610px;
+   height: 680px;
 }
 
-.de p{
+.di p{
    position: absolute;
    color: #fff;
    font-family: 'Poller one';
@@ -440,4 +499,200 @@ body {
    height: 1px;
    width: 207px;
    background-color: #fff;
+}
+/**/
+
+.carre-or3{
+   z-index: 6;
+   width: 20px;
+   height: 160px;
+   position: absolute;
+   background-color: #F7C35F;
+   margin-left: 102px;
+   top: 43.7%;
+}
+
+.carre-or4{
+   z-index: 6;
+   width: 20px;
+   height: 160px;
+   position: absolute;
+   background-color: #F7C35F;
+   left: 20%;
+   top: 73%;
+}
+
+.pa4{
+   position: absolute;
+   top: 66.5%;
+   left: 4%;
+   font-family: 'Poller one';
+   font-size: 20px;
+}
+
+.pa4 span{
+   font-weight: 900;
+   color: #F7C35F;
+}
+
+
+/**/
+.leader-pn{
+   background-image: url(img/field-3561850_1280.jpg);
+   height: 300px;
+   display: flex;
+   opacity: 0.6;
+   background-size: contain;
+   position: relative;
+}
+
+.leader img{
+   position: absolute;
+   border-radius: 50%;
+   height: auto;
+   width: 60px;
+   border: 2px solid rgb(0, 0, 0);
+   left: 24.5%;
+   top: 45%;
+}
+
+.pn{
+   position: absolute;
+   color: rgb(0, 0, 0);
+   font-family: 'Rancho';
+   left: 29%;
+   font-size: 40px;
+   font-weight: 200;
+   top: 36%;
+}
+
+/**/
+.footer{
+   position: relative;
+   background: linear-gradient(to bottom, #F7C35F 80%, #334b35 20%);
+   height: 600px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.footer-lien li {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   top: 20%;
+}
+
+.footer-lien li a{
+   text-decoration: none;
+   color: #797979;
+   font-size: 25px;
+}
+
+.lien{
+   color: #6D8C54;
+   font-size: 30px;
+   font-family: 'Merriweather';
+   font-weight: 400;
+}
+.d2{
+   display: flex;
+   flex-flow: column;
+}
+
+.cont{
+   left: 10px;
+   top: 1%;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+   position: absolute;
+}
+
+.eml{
+   left: 10px;
+   position: absolute;
+   top: 15%;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.hn{
+   top: 25%;
+   position: absolute;
+   color: #334B35;
+   left: 3%;
+   font-family: 'Merriweather';
+   font-size: 30px;
+}
+
+.tl{
+   left: 10px;
+   top: 35%;
+   position: absolute;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.tle{
+   top: 45%;
+   position: absolute;
+   color: #334B35;
+   font-family: 'Merriweather';
+   left: 3%;
+   font-size: 30px;
+}
+
+.adr{
+   left: 10px;
+   top: 55%;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+   position: absolute;
+}
+
+.rue{
+   top: 65%;
+   position: absolute;
+   color: #334B35;
+   font-family: 'Merriweather';
+   left: 3%;
+   font-size: 30px;
+}
+
+.line3{
+   background-color: white;
+   height: 1px;
+   width: 300%;
+}
+
+.footer-lien2{
+   position: absolute;
+   display: flex;
+   list-style: none;
+   text-decoration: none;
+   left: 65%;
+}
+
+.footer-lien2 img{
+   width: 50%;
+   height: auto;
+}
+
+.coperate{
+   position: relative;
+   top: 85%;
+   right: 47%;
+}
+
+.coperate pre{
+   font-size: 25px;
+   color: white;
+   position: absolute;
 }
