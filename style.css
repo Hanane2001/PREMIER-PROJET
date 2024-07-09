@@ -1,96 +1,177 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppin','Merriweather','Poly','Poller one', 'Rancho', sans-serif;
- }
- 
- header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    background-color: #fff;
-    color: #000;
- }
- 
- .logo {
-    font-size: 2em;
-    display: flex;
-    align-items: center;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppin','Merriweather','Poly','Poller one', 'Rancho', sans-serif;
  }
 
- .logo img {
-    float: left;
-    width: 100px;
-    height: 100px;
-    background: #555;
-  }
-  
-  .logo p {
-    position: relative;
-    font-family: 'Poppin';
-    font-weight: 200;
-  }
+ .navbar {
+   font-family: "Poppins", sans-serif;
+}
+
+.navbar-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; /* Align items vertically */
+   list-style: none;
+   padding: 0;
+}
+
+.navbar-menu li {
+   display: inline; /* This should be `inline-block` or `inline-flex` */
+   position: relative; /* Ensure correct positioning of absolute elements */
+}
+
+.navbar-menu li img#logo {
+   width: 130px;
+   height: 70px;
+}
+
+.navbar-menu li p {
+   position: absolute;
+   font-size: 25px;
+   font-family: 'Poppins', sans-serif; /* Correct the font family name */
+   font-weight: 200;
+   top: 50%; /* Adjust vertically */
+   transform: translateY(-50%); /* Center vertically */
+}
+
+.navbar-menu li a {
+   color: rgb(15, 15, 15);
+   text-decoration: none;
+   padding: 14px 16px;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-menu li a:hover {
+   background-color: #575757;
+   color: white;
+}
+
+#logo  {
+   width: 130px;
+   height: 70px;
+}
 
   .content{
-    
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: center;
   }
+
   .content img{
-    width: 40px;
-    height: 40px;
+   width: 40px;
+   height: 40px;
   }
 
  .call-button {
-    background-color: #f2c14e;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: #f2c14e;
-    cursor: pointer;
-    margin-left: 60%;
+   background-color: #f2c14e;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: #f2c14e;
+   cursor: pointer;
+   margin-left: 60%;
  }
 
  .call-button img{
-    width: 20px;
-    height: 20px;
+   width: 20px;
+   height: 20px;
  }
 
- .call-button pre{
-    font-weight: 500;
-    font-family: 'Poppin';
-    text-align: center;
+ .call-button p{
+   font-weight: 500;
+   font-family: 'Poppin';
+   text-align: center;
  }
  
  .slider {
-    background-image: url("img/homeh.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: calc(100vh - 80px);
-    overflow: hidden;
+   /*background-image: url("img/homeh.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   height: calc(100vh - 80px);
+   height: 800px;
+   width: 1200px;*/
+   margin-left: 360px;
+   margin-top: 20px;
+   overflow: hidden;
+ }
+
+ @-webkit-keyframes slide_animation{
+   0%{
+      left: 0px;
+   }
+   10%{
+      left: 0px;
+   }
+   20%{
+      left: 1200px;
+   }
+   30%{
+      left: 1200px;
+   }
+   40%{
+      left: 2400px;
+   }
+   50%{
+      left: 2400px;
+   }
+   60%{
+      left: 1200px;
+   }
+   70%{
+      left: 1200px;
+   }
+   80%{
+      left: 0px;
+   }
+   90%{
+      left: 0px;
+   }
+   100%{
+      left: 0px;
+   }
  }
  
  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 1s;
+   /*position: absolute;*/
+   position: relative;
+   width: 3600px;
+   height: 800px;
+   -webkit-animation-name: slide_animation;
+   -webkit-animation-duration: 33s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-play-state: running;
+   margin: 0 0 0 -2400px;
+   /*top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   opacity: 0;
+   transition: opacity 1s;*/
+ }
+
+ .img-container{
+   height: 800px;
+   width: 1200px;
+   position: relative;
+   float: left;
+ }
+
+ .img-container img{
+   width: 3600px;
+   height: 800px;
  }
  
  .slide.current {
-    opacity: 1;
+   opacity: 1;
  }
 
  .slide img{
@@ -164,6 +245,7 @@ body {
  }
 
  .fern{
+   z-index: 3;
     width: 20%;
     height: 600px;
     margin-left: 13%;
@@ -177,13 +259,22 @@ body {
     color: #fff; 
  }
 
- #btn pre{
+ #btn p{
     margin-top: 8%;
     color: #fff;
     font-family: 'Poly';
     font-weight: 200;
     font-size: 23px;
     text-align: left;
+ }
+
+ #btn h1{
+   margin-top: 8%;
+   color: #fff;
+   font-family: 'Poly';
+   font-weight: 200;
+   font-size: 23px;
+   text-align: left;
  }
 
  .nature-img{
@@ -566,133 +657,85 @@ body {
    top: 36%;
 }
 
-/**/
-.footer{
-   position: relative;
-   background: linear-gradient(to bottom, #F7C35F 80%, #334b35 20%);
-   height: 600px;
-   display: flex;
-   justify-content: space-around;
+footer{
+   background: linear-gradient(to bottom, #F7C35F 70%, #577B5A 30%);
+   /*background-color:#F7C35F;*/
+   padding:10px;
+
 }
 
-.footer-lien li {
+.foter h3{
+   color: #6D8C54;
+   font-family: 'Rancho';
+   font-size: 20px;
+}
+
+.foter p{
+   font-size: 17px;
+   font-family: 'Merriweather';
+   color: gray;
+}
+
+.foter span{
+   color: #334b35;
+   font-family: 'Rancho';
+}
+#contact{
+   display:flex;
+   justify-content:space-around;
+}
+
+#cnFter ul li{
    list-style: none;
-   display: flex;
-   justify-content: space-around;
-   top: 20%;
+   text-decoration:none;
+   /*color:rgb(139, 138, 138);*/
 }
 
-.footer-lien li a{
-   text-decoration: none;
-   color: #797979;
-   font-size: 25px;
-}
-
-.lien{
+#cnFter h3{
+   font-size: 20px;
    color: #6D8C54;
-   font-size: 30px;
-   font-family: 'Merriweather';
-   font-weight: 400;
-}
-.d2{
-   display: flex;
-   flex-flow: column;
-}
-
-.cont{
-   left: 10px;
-   top: 1%;
    font-family: 'Rancho';
-   color: #6D8C54;
-   font-size: 30px;
-   font-weight: 400;
-   position: absolute;
 }
 
-.eml{
-   left: 10px;
-   position: absolute;
-   top: 15%;
-   font-family: 'Rancho';
-   color: #6D8C54;
-   font-size: 30px;
-   font-weight: 400;
-}
-
-.hn{
-   top: 25%;
-   position: absolute;
-   color: #334B35;
-   left: 3%;
+#cnFter ul li a{
+   font-size: 17px;
    font-family: 'Merriweather';
-   font-size: 30px;
+   text-decoration:none;
+   color:gray;
 }
 
-.tl{
-   left: 10px;
-   top: 35%;
-   position: absolute;
-   font-family: 'Rancho';
-   color: #6D8C54;
-   font-size: 30px;
-   font-weight: 400;
+#cnFter ul li a:hover{
+   color: #263C28;
 }
 
-.tle{
-   top: 45%;
-   position: absolute;
-   color: #334B35;
-   font-family: 'Merriweather';
-   left: 3%;
-   font-size: 30px;
-}
-
-.adr{
-   left: 10px;
-   top: 55%;
-   font-family: 'Rancho';
-   color: #6D8C54;
-   font-size: 30px;
-   font-weight: 400;
-   position: absolute;
-}
-
-.rue{
-   top: 65%;
-   position: absolute;
-   color: #334B35;
-   font-family: 'Merriweather';
-   left: 3%;
-   font-size: 30px;
-}
-
-.line3{
-   background-color: white;
-   height: 1px;
-   width: 300%;
-}
-
-.footer-lien2{
-   position: absolute;
-   display: flex;
+.fn li{
+   text-decoration:none;
    list-style: none;
-   text-decoration: none;
-   left: 65%;
 }
 
-.footer-lien2 img{
-   width: 50%;
-   height: auto;
+.fn h3{
+   font-size: 20px;
+   color: #6D8C54;
+   font-family: 'Rancho';
 }
 
-.coperate{
-   position: relative;
-   top: 85%;
-   right: 47%;
+.fn img{
+   width: 20px;
+   height: 20px;
 }
 
-.coperate pre{
-   font-size: 25px;
+.ab{
+   display: flex;
+   background-color: #577B5A;
+   padding-left: 42%;
+}
+
+.ab p{
    color: white;
-   position: absolute;
+   font-size: 20px;
+}
+@media (max-width: 600px){
+   p{
+      font-size: 0.8em;
+   }
 }

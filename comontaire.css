@@ -1,0 +1,290 @@
+ /*
+
+.navbar {
+   font-family: "Poppins", sans-serif;
+   overflow: hidden;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
+}
+
+.navbar-menu li {
+   display: inline;
+}
+
+.navbar-menu li a {
+    display: block;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar-menu li a:hover {
+    background-color: #575757;
+}
+
+#logo  {
+   width: 130px;
+   height: 70px;
+}
+
+ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   list-style-type: none;
+   padding: 10;
+   margin: 10;
+}
+
+li p{
+   left: 8%;
+   font-size: 25px;
+   position: absolute;
+   font-family: 'Poppin';
+   font-weight: 200;
+}
+
+li a {
+   color: rgb(10, 10, 10); 
+   text-decoration: none; 
+   padding: 5px 10px; 
+   transition: background-color 0.3s, color 0.3s; 
+}
+
+ul li {  
+   margin-right: 10px;
+}
+
+ul li p{
+   left: 8%;
+   font-size: 25px;
+   position: absolute;
+   font-family: 'Poppin';
+   font-weight: 200;
+}
+ul li a {
+   color: rgb(10, 10, 10); 
+   text-decoration: none; 
+   padding: 5px 10px; 
+   transition: background-color 0.3s, color 0.3s; 
+}
+ul li a:visited {
+   color: rgb(11, 10, 10); 
+}
+ul li a:hover {
+   background-color: rgba(38, 185, 136, 0.742);
+   color: white;
+}
+ul li a:active {
+   color: white; 
+}*/
+
+
+/*
+ 
+ header {
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 80px;
+   background-color: #fff;
+ }
+ 
+ .logo {
+   position: absolute;
+   font-size: 2em;
+   display: flex;
+   align-items: center;
+   right: 80%;
+ }
+
+ .logo img {
+   position: absolute;
+   float: left;
+   width: 100px;
+   height: 100px;
+   background: #555;
+  }
+  
+  .logo p {
+   left: 2%;
+   position: absolute;
+   font-family: 'Poppin';
+   font-weight: 200;
+  }*/
+
+  /*
+.footer{
+   position: relative;
+   background: linear-gradient(to bottom, #F7C35F 80%, #334b35 20%);
+   height: 600px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.footer-lien li {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   top: 20%;
+}
+
+.footer-lien li a{
+   text-decoration: none;
+   color: #797979;
+   font-size: 25px;
+}
+
+.lien{
+   color: #6D8C54;
+   font-size: 30px;
+   font-family: 'Merriweather';
+   font-weight: 400;
+}
+.d2{
+   display: flex;
+   flex-flow: column;
+}
+
+.cont{
+   left: 10px;
+   top: 1%;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+   position: absolute;
+}
+
+.eml{
+   left: 10px;
+   position: absolute;
+   top: 15%;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.hn{
+   top: 25%;
+   position: absolute;
+   color: #334B35;
+   left: 3%;
+   font-family: 'Merriweather';
+   font-size: 30px;
+}
+
+.tl{
+   left: 10px;
+   top: 35%;
+   position: absolute;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.tle{
+   top: 45%;
+   position: absolute;
+   color: #334B35;
+   font-family: 'Merriweather';
+   left: 3%;
+   font-size: 30px;
+}
+
+.adr{
+   left: 10px;
+   top: 55%;
+   font-family: 'Rancho';
+   color: #6D8C54;
+   font-size: 30px;
+   font-weight: 400;
+   position: absolute;
+}
+
+.rue{
+   top: 65%;
+   position: absolute;
+   color: #334B35;
+   font-family: 'Merriweather';
+   left: 3%;
+   font-size: 30px;
+}
+
+.line3{
+   background-color: white;
+   height: 1px;
+   width: 300%;
+}
+
+.footer-lien2{
+   position: absolute;
+   display: flex;
+   list-style: none;
+   text-decoration: none;
+   left: 65%;
+}
+
+.footer-lien2 img{
+   width: 50%;
+   height: auto;
+}
+
+.coperate{
+   position: relative;
+   top: 85%;
+   right: 47%;
+}
+
+.coperate pre{
+   font-size: 25px;
+   color: white;
+   position: absolute;
+}*/
+/*transition: font-size 0.3s ease-in-out;*/
+
+/*<div class="footer">
+      <div class="d1">
+        <p class="cont">Contactez-nous:</p>
+        <p class="eml">Email:</p>
+        <p class="hn">hanan2122hanan@gmail.com</p>
+        <p class="tl">télé:</p>
+        <p class="tle">0607985473</p>
+        <p class="adr">Adresse:</p>
+        <p class="rue">12 Rue Ibn Tachfine, Hay Riad, Rabat 10000, Maroc.</p>
+      </div>
+
+      <div class="d2">
+        <p class="lien">Liens utiles:</p>
+        <ul class="footer-lien">
+          <li><a href="#btn">Accueil</a></li>
+          <li><a href="#diff">Diff</a></li>
+          <li><a href="#mono">Mono</a></li>
+          <li><a href="#dico">Dico</a></li>
+        </ul>
+        <div class="line-ln">
+            <div class="line3"></div>
+            <ul class="footer-lien2">
+                <li><a href="facebook"><img src="img/733547.png" ></a></li>
+                <li><a href="insta"><img src="img/2111463.png" ></a></li>
+                <li><a href="twitter"><img src="img/3256013.png" ></a></li>
+                <li><a href="youtube"><img src="img/3955019.png" ></a></li>
+                <li><a href="linkdin"><img src="img/3536505.png" ></a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="coperate">
+        <pre>©️2024-2026 Mauvaise -Tous Droits Réservés.</pre>
+      </div>
+    </div>*/
